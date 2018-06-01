@@ -3,7 +3,7 @@
   <fullName>admin</fullName>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwbCQ2FS1uqch7OfNTLDQobXqbDh6fk+6VFtEO/Cam63FGpgcJCqhxOgUvDXcxf+roaUi+or55VfhHXdAH09p59A==}</apiToken>
+      <apiToken>{AQAAABAAAAAw8BoIUjSch7XhGJUUHbb39YjxlQcJUUizSkiPmW9nx2tQ5IL5jcUeg3MvjEa8gkCVmcb1XV7MN75QHjiuN2aDvg==}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <hudson.model.MyViewsProperty>
       <views>
@@ -23,13 +23,13 @@
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$I.TIVsoWf4s7ugdzx06hbOYIxTsvKaZpWX.KPK8QavuXkRbieU8Yq</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$o4XTEmrDlpUBSuIQK/oCtOzyPGsVq39zXfYqKMcyBzlYGMhn6uI46</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <jenkins.security.LastGrantedAuthoritiesProperty>
       <roles>
         <string>authenticated</string>
       </roles>
-      <timestamp>1527850123082</timestamp>
+      <timestamp>1527851273681</timestamp>
     </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
