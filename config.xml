@@ -20,7 +20,56 @@
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
-  <clouds/>
+  <clouds>
+    <org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud plugin="kubernetes@1.7.0">
+      <name>kubernetes</name>
+      <defaultsProviderTemplate></defaultsProviderTemplate>
+      <templates>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>Base</name>
+          <namespace>acid-setup</namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>5</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>600</activeDeadlineSeconds>
+          <label></label>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>NORMAL</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers/>
+          <envVars/>
+          <annotations/>
+          <imagePullSecrets>
+            <org.csanchez.jenkins.plugins.kubernetes.PodImagePullSecret>
+              <name></name>
+            </org.csanchez.jenkins.plugins.kubernetes.PodImagePullSecret>
+          </imagePullSecrets>
+          <yaml></yaml>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+      </templates>
+      <serverUrl></serverUrl>
+      <skipTlsVerify>false</skipTlsVerify>
+      <addMasterProxyEnvVars>false</addMasterProxyEnvVars>
+      <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+      <namespace>acid-setup</namespace>
+      <jenkinsUrl>http://acid-setup:8080</jenkinsUrl>
+      <credentialsId>8334ca38-011d-49a3-92aa-9ff5378f472a</credentialsId>
+      <containerCap>10</containerCap>
+      <retentionTimeout>5</retentionTimeout>
+      <connectTimeout>0</connectTimeout>
+      <readTimeout>0</readTimeout>
+      <maxRequestsPerHost>32</maxRequestsPerHost>
+    </org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud>
+  </clouds>
+  <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
     <hudson.model.AllView>
